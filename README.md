@@ -1,30 +1,5 @@
-           **TO DO**
+# About SCCI
 
--links in home page
+- SCCI (Student Community & Collaboration Initiative) is a web platform designed to help users learn about SCCI, understand its activities, and provide members with personal accounts. Each member has a profile where they can track their attendance and courses.
 
--links in profile courses
-
--edit footer and links 
-
--n7ot el events f page el events slider
-
--our-crew page 
-
--logo title in some pages 
-
--page el landing 
-
-
-                **3mlna edit fe**
-
-page el home 
-
-nav
-
-crew
-
-
-
-
-
-
+- SCCI ensures that every student and teacher has a dedicated account, provided by the organization, to access their records securely. The platform also includes role-based access, allowing administrators, students, and teachers to have specific functionalities based on their roles.
