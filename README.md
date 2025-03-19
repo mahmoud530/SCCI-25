@@ -11,7 +11,7 @@
 
 ✅ Profiles – Members can view their attendance records and courses.
 
-✅ Role-Based Access – Different roles for users (e.g., Admin, Student, Teacher).
+✅ Role-Based Access – Different roles for users ( participant, Member, A.C, Head).
 
 ✅ Secure Login System – Only authorized members can access their accounts.
 
