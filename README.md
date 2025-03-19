@@ -6,9 +6,13 @@
 
 # 🌟 Features
 ✅ About SCCI – Information on what SCCI is and what they do.
+
 ✅ User Accounts – Each member has a personal account provided by SCCI.
+
 ✅ Profiles – Members can view their attendance records and courses.
+
 ✅ Role-Based Access – Different roles for users (e.g., Admin, Student, Teacher).
+
 ✅ Secure Login System – Only authorized members can access their accounts.
 
 
