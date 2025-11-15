@@ -214,7 +214,7 @@
                     you in bringing the gap between the technical life and the practical life in the market place. You
                     can know more about our organization right here.
                 </p>
-                <a href="#">
+                <a href="aboutus.php">
                     <button class="button">
                         <span class="text">Learn More</span>
                         <span class="svg">
@@ -410,7 +410,7 @@
                         ready to do whatever it takes to raise this place high enough to reach all of your expectations
                         <br>
 
-                        <a href="#" class="btn"> Learn More</a>
+                        <a href="our-crew.php" class="btn"> Learn More</a>
                     </div>
                     <div class="side-bar right">
                         <div class="hole"></div>
@@ -581,7 +581,7 @@
                         job market.
                         <br>
 
-                        <a href="#" class="btn"> Learn More</a>
+                        <a href="workshopgi.php" class="btn"> Learn More</a>
                     </div>
                     <div class="side-bar right">
                         <div class="hole"></div>
