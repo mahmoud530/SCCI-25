@@ -1,0 +1,39 @@
+preprocessing:
+
+discretize:
+	bin: number of items in interval
+    		equal frequency: kol el intervals ad b3d
+
+    		equal width: el difference between el last element wel first element <= 10 w msh lazem kul el intervals tb2a ad b3d
+
+
+
+
+preprocessing:
+remove null values
+discretize: if needed (apriori)
+normalization: (KNN - Kmean - DBSCAN - Heirarchal)
+
+
+apriori: data must be nominal (discretize)
+
+KNN - Kmean - DBSCAN - Heirarchal: normalization 
+
+
+strong rule - association rule
+	(apriori)
+
+dependency -> lift
+
+frequent items count = sum of size of set
+
+
+
+lazy classifier - neighbor - distance
+	KNN (IBK) data might be nominal either numerical 
+
+
+
+statistical classifier:
+	(NAIVE BAYES) data must be nominal
+ID3 (J48)   data must be nominal 

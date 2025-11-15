@@ -1,0 +1,260 @@
+// colors
+$red: #e12835;
+$ruby: #be2633;
+$white: #fff;
+$black: #000;
+
+// typography
+$default-font: 'Barlow Condensed', sans-serif;
+$font-size: 5rem;
+$text-padding: .4rem;
+$tween: 95px;
+
+// animations
+$animation-unit: 300ms;
+$slideOut: $animation-unit * 2.5;
+$slideStudios: $animation-unit * 4;
+
+
+* {
+    top: 0;
+    bottom: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $red;
+  background-image: radial-gradient($red 20%, $ruby 50%, rgba($black, .5) 100%);
+  background-size: 120%;
+  background-position: center;
+  font-family: $default-font;
+  animation: tighten-vinette ease-out ($animation-unit * 6) forwards;
+}
+
+.images {
+  pointer-events: none;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  opacity: .6;
+  z-index: 20;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  background-image: url('https://static.comicvine.com/uploads/original/11124/111240517/4986890-4700382785-29908.jpg');
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    .restart {
+      opacity: .8;
+    }
+  }
+}
+
+.restart {
+  color: $white;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: -.08rem;
+  transition: opacity $animation-unit/2 linear;
+}
+
+.marvel, .studios {
+  position: relative;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: -.2rem;
+  font-size: $font-size;
+  margin: .05rem .05rem .5rem;
+  padding: 0 $text-padding;
+  display: inline-block;
+}
+
+.studios {
+  font-weight: 500;
+  letter-spacing: -.3rem;
+  transform: translateX(-$tween);
+}
+
+.marvel {
+  z-index: 10;
+  font-weight: 800;
+  transform: translateX($tween);
+  &:before {
+    z-index: -10;
+    content: '';
+    display: block;
+    background-color: $red;
+    border: solid rgba($white, .2) 1px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+%bar {
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  background-color: $white;
+  display: block;
+  left: $text-padding;
+  right: $text-padding;
+}
+
+.studios {
+  &:after, &:before {
+    @extend %bar;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+}
+
+
+
+// Cue all the animations when run-animation class is activated
+.wrapper.run-animation {
+  animation: shrink ease-out ($animation-unit * 16) forwards ($animation-unit * 2);
+  .marvel {
+  transform: translateX($tween);
+  animation: slide-out-X $slideOut ease forwards;
+}
+  .studios {
+    transform: translateX(-$tween);
+    color: transparent;
+    animation: slide-out-X $slideOut ease forwards, show-text $animation-unit linear forwards ($slideOut * 2);
+    &:before {
+      transform: translateY(($font-size + ($text-padding * 2)) / 2);
+      animation: slide-out-Y $animation-unit ease forwards $slideOut;
+    }
+    &:after {
+      transform: translateY(-(($font-size + ($text-padding * 2)) / 2));
+      animation: slide-out-Y $animation-unit ease forwards $slideOut;
+    }
+  }
+  .restart {
+    opacity: 0;
+    animation: fade-down ($animation-unit * 4) ease ($animation-unit * 12) forwards;
+  }
+  ~ .images {
+    animation: flicker-images ($animation-unit * 5) 2 steps(1, end), fade-out ($animation-unit * 5 * 3) forwards;
+  }
+}
+
+
+@keyframes slide-out-X {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-Y {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes show-text {
+  100% {
+    color: $white;
+  }
+}
+
+@keyframes shrink {
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes tighten-vinette {
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: .5;
+  }
+}
+
+@keyframes fade-out {
+  100% {
+    height: 250vh;
+    opacity: 0;
+  }
+}
+
+@keyframes flicker-images {
+  0% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/eslam\ mohamed.jpg');
+  }
+  10% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/ahmed\ shawky.jpg');
+  }
+  20% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/tasneem\ zahran.jpg');
+  }
+  30% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/Ziad\ ayman.jpg');
+  }
+  40% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/seif\ \ darwish.jpg');
+  }
+  50% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/eslam\ mohamed.jpg');
+  }
+  60% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/ahmed\ shawky.jpg');
+  }
+  70% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/tasneem\ zahran.jpg');
+  }
+  80% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/Ziad\ ayman.jpg');
+  }
+  90% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/seif\ \ darwish.jpg');
+  }
+  100% {
+    height: 250vh;
+    background-image: url('./img/book-heads-images/eslam\ mohamed.jpg');
+  }
+}

@@ -1,0 +1,374 @@
+/* Global Styles */
+body {
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile Card */
+.card {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+  text-align: center;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  animation: popIn 1.2s ease-in-out;
+}
+
+#spicialstyle {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #04045c;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #c52525;
+}
+
+/* Typing Animation */
+.typing {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #7e2ea0;
+  animation: typing 2s steps(12, end), cursor 0.2s steps(12, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1.8s ease-out;
+}
+
+thead th {
+  background-color: #0f0d85;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+  background-color: #e2e2ff;
+}
+
+tbody td.attendance-present {
+  color: #4caf50;
+  font-weight: bold;
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+tbody td.attendance-absent {
+  color: #a71e0b;
+  font-weight: bold;
+  background-color: #fdecea;
+  border-left: 4px solid #a71e0b;
+}
+
+/* Logout Button */
+.logout:hover {
+  background-color: #c52525;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Cards Section */
+.title_courses {
+  text-align: center;
+  font-size: 3em;
+  color: #00005b;
+  padding: 30px;
+  animation: fadeInUp 2.8s ease-out;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 20px;
+  max-width: 1200px;
+  animation: fadeInUp 2.8s ease-out;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-item {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-item h3 {
+  color: #00005b;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.card-item p {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.card-item a {
+  color: white;
+  background-color: #c52525;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.card-item a:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+
+  .profile img {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+}
+
+.upload-icon {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.upload-icon button {
+  background: #b21b04;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.upload-icon button:hover {
+  background: #00005b;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.save-btn {
+  display: none;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+font-size: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background-color: #00005b;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .logout-btn {
+    width: 50%;
+    font-size: 1rem;
+  }
+}
+#member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5em;
+  color: #c52525;
+  background-color: #f4f4f4; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(149, 43, 43, 0.1);
+  margin: 20px auto; 
+  width: 80%; 
+  max-width: 800px; 
+  animation: fadeInUp 1.8s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #member {
+    font-size: 1.8em; 
+    padding: 15px; 
+    width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  #member {
+    font-size: 1.2em; 
+    padding: 10px; 
+    width: 95%; 
+  }
+}
+
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 100%;
+  }
+  100% {
+      width: 0;
+  }
+}
+
+.cssanimation.typing {
+  overflow: hidden;
+  border-right: 0.15em solid red ; 
+  animation: typing 7s steps(30, end) infinite;
+}
+
+
+
+
