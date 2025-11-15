@@ -26,22 +26,22 @@
             <div class="linkHeadLine">
                 <h1>COMMITTEES</h1>
                 <ul>
-                    <li><a href="#">AC</a></li>
-                    <li><a href="#">IT</a></li>
-                    <li><a href="#">SMM</a></li>
-                    <li><a href="#">MP</a></li>
-                    <li><a href="#">DD</a></li>
-                    <li><a href="#">MC</a></li>
+                    <li><a href="members.php?com=ac">AC</a></li>
+                    <li><a href="members.php?com=it">IT</a></li>
+                    <li><a href="members.php?com=smm">SMM</a></li>
+                    <li><a href="members.php?com=mp">MP</a></li>
+                    <li><a href="members.php?com=dd">DD</a></li>
+                    <li><a href="members.php?com=mc">MC</a></li>
                 </ul>
             </div>
             <div class="linkHeadLine">
                 <h1>COMMITTEES</h1>
                 <ul>
-                    <li><a href="#">HR</a></li>
-                    <li><a href="#">PR</a></li>
-                    <li><a href="#">CR</a></li>
-                    <li><a href="#">LOGISTICS</a></li>
-                    <li><a href="#">BD</a></li>
+                    <li><a href="members.php?com=hr">HR</a></li>
+                    <li><a href="members.php?com=PR">PR</a></li>
+                    <li><a href="members.php?com=CR">CR</a></li>
+                    <li><a href="members.php?com=Logistics">LOGISTICS</a></li>
+                    <li><a href="members.php?com=BD">BD</a></li>
                 </ul>
             </div>
             <div class="linkHeadLine">

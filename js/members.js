@@ -91,16 +91,16 @@ const ITHeadJobDescriptionList = [
 ];
 
 const ITMemberImageList = [
-    "IT-members/ID-1.png",
-    "IT-members/ID [Recovered]7-1.png",
-    "IT-members/ID [Recovered]-1.png",
-    "IT-members/ID [Recovered]11-1.png",
-    "IT-members/ID [Recovered]4-1.png",
-    "IT-members/ID [Recovered]5-1.png",
-    "IT-members/ID [Recovered]6-1.png",
-    "IT-members/ID [Recovered]8-1.png",
-    "IT-members/ID [Recovered]10-1.png",
-    "IT-members/ID [Recovered]12-1.png",
+    "IT-members/mahmoud Allam.png",
+    "IT-members/marwan wael.png",
+    "IT-members/mohamed Ahmed.png",
+    "IT-members/Youssef Ahmed.png",
+    "IT-members/zyead waleed.png",
+    "IT-members/Sarah shendy.png",
+    "IT-members/samaa Essam.png",
+    "IT-members/mustafa hanafy.png",
+    "IT-members/mohamed saeed.png",
+    "IT-members/Ahmed abdelnasser.png",
     
 ]
 
